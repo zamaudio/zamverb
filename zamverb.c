@@ -402,8 +402,8 @@ run(LV2_Handle instance, uint32_t n_samples)
 		outr = bandpass_procR(zamverb, outr);
 
 		// Mix wet/dry
-		outputl[pos] = (outl*wet/4.0 + inl*dry)/2.f;
-		outputr[pos] = (outr*wet/4.0 + inr*dry)/2.f;
+		outputl[pos] = (outl*wet/4.0 + inl*dry);
+		outputr[pos] = (outr*wet/4.0 + inr*dry);
 	}
 }
 
